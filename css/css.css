@@ -1,0 +1,114 @@
+body {
+   font-family: Arial, sans-serif;
+   background-color: #f0f0f0;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   flex-direction: column;
+   height: 100vh;
+}
+
+.container {
+   max-width: 960px;
+   margin: 0 auto;
+   padding: 20px;
+   box-sizing: border-box;
+}
+
+.header {
+   background-color: #FFD700;
+   color: black;
+   text-align: center;
+   padding: 10px 0;
+}
+
+.page-title {
+   text-align: center;
+   margin-top: 40px;
+}
+
+.search-bar {
+   background-color: #FFD700;
+   color: black;
+   padding: 10px 20px;
+   text-align: left;
+}
+
+.search-bar input[type="text"] {
+   padding: 8px;
+   font-size: 16px;
+   margin-right: 10px;
+}
+
+.search-bar button {
+   padding: 8px 16px;
+   font-size: 16px;
+   background-color: #333;
+   color: white;
+   border: none;
+   cursor: pointer;
+}
+
+.search-bar button:hover {
+   background-color: #555;
+}
+
+.pokemon-list {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   margin-top: 20px;
+}
+
+.pokemon-card {
+   width: 160px;
+   margin: 20px;
+   padding: 20px;
+   border: 1px solid #ccc;
+   border-radius: 10px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: white;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.pokemon-card img {
+   width: 120px;
+   height: 120px;
+   margin-bottom: 10px;
+}
+
+.pokemon-type {
+   padding: 6px 12px;
+   border-radius: 20px;
+   color: white;
+   font-weight: bold;
+   margin-top: 10px;
+}
+
+.footer {
+   background-color: #FFD700;
+   color: black;
+   text-align: center;
+   padding: 10px 0;
+}
+.footer img {
+   width: 40px; /* Largura da imagem do Pokémon */
+   margin-left: 10px; /* Espaçamento à esquerda da imagem */
+}
+.header, .footer {
+   background-color: #FFD700;
+   color: black;
+   text-align: center;
+   padding: 10px 0;
+}
+.pokemon-starts-with-c { 
+   background-color:
+    #3498db; 
+   color: white;  }
+   .pokemon-card:hover {
+      background-color: #3498db; /* ou qualquer cor que você deseje para o efeito de hover */
+      transition: background-color 0.3s ease;
+  }
+  

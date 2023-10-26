@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="css/css.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #f1c40f;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .content {
+            margin-top: 20px;
+        }
+
+        .footer {
+            background-color: #f1c40f;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        .search-bar {
+            background-color: #f39c12;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .search-bar input[type="text"] {
+            padding: 8px;
+            font-size: 16px;
+        }
+
+        .search-bar button {
+            padding: 8px 16px;
+            font-size: 16px;
+            background-color: #d35400;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .search-bar button:hover {
+            background-color: #e67e22;
+        }
+
+        .pokemon-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .pokemon-card {
+            width: 160px;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .pokemon-card img {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 10px;
+        }
+
+        .footer img {
+            width: 40px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <img src="imagens/logo.png">
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="search-bar">
+            <div class="container">
+                <label for="search">Pokemon:</label>
+                <input type="text" id="search" placeholder="Digite o nome do Pokémon...">
+                <button id="search-button">Pesquisar</button>
+            </div>
+        </div>
+
+        <div class="container">
+            <div id="pokemon-list" class="pokemon-list"></div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Desenvolvido por Maria Eduarda Fernandes da <img src="imagens/pokemon.png" alt="Pokémon"></p>
+        </div>
+    </footer>
+
+    <script src="js/pokemon.js"></script>
+</body>
+
+</html>
